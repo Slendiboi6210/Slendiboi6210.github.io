@@ -1,132 +1,28 @@
-body{
-    background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    opacity: 0.9;
-    color:bisque;
+header h1{
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    margin-top: 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     
-    align-items: center;
-
-}
-
-header{
-    display: flex;
-    height: 50px;
-    justify-content: space-between;
-    margin-bottom: 9px;
-    margin-left: 10px;
-}
-
-.HoriList{
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    align-items: center;
-}
-
-.HoriList li a{
-    text-decoration: underline;
-}
-
-
-
-#OurMission{
-    height: 700px;
-    width: 1200px;
-    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*erfmqr*_gcl_au*MTIwOTY4MTM2My4xNzUxMDQ3NTI3*_ga*NTc4NTUyMTU0Mi4xNzUxMDQ3NTI2*_ga_3LRZM6TM9L*czE3NTIxODcxODUkbzIyJGcxJHQxNzUyMTg4OTIxJGo1NiRsMCRoMA..');
+    gap: 100px 10px;
+    background-image: url('https://media.discordapp.net/attachments/1216577629071867915/1394073234051174461/QIYAM7O33FDS3AFKW775HBXX4I.png?ex=68757b5f&is=687429df&hm=bd051ed77eeaa6ec1c63b7e675b55bcb516a32740603c941276e5379007d9a8b&=&format=webp&quality=lossless&width=635&height=953');
+    background-size: cover;
     background-position: center;
+    background-position-y: -450px;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    
 }
 
-#OurMission .items{
-    background-color: black;
-    width: 100%;
-    text-align: center;
-    margin: 0%;
-}
-
-#Tea{
-    width: 1000px;
-    margin: auto;
-}
-
-#Tea .container{
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    
-    
-}
-
-#Tea .container .box img{
-    width: 300px;
+.box{
+    background-color: aquamarine;
+    width: 200px;
     height: 200px;
-    margin: 0%;
-    
-}
-#Tea .container .box h4{
-    
-    margin-top: 10px;
-    
-}
-#Tea .container .box{
-    
-    margin: 15px;
-  
-}
-
-#Locations h2{
-    
-    text-align: center;
-    margin-bottom: 15px
-}
-
-#Locations{
-    background-image: url('https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg?_gl=1*6rz3tb*_gcl_au*MTIwOTY4MTM2My4xNzUxMDQ3NTI3*_ga*NTc4NTUyMTU0Mi4xNzUxMDQ3NTI2*_ga_3LRZM6TM9L*czE3NTIxODcxODUkbzIyJGcxJHQxNzUyMTg4OTIxJGo1NiRsMCRoMA..');
-    background-position-y: -60px;
-    height: 500px;
-    width: 1200px;
+    border: 1px solid black;
     margin: auto;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-#Locations .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-#Locations .box{
-    height: 300px;
-    width: 300px;
-    background-color: black;
-    margin-right: 20px;
-    margin-left: 20px;
     text-align: center;
+    align-content: center;
+    text-wrap-mode: wrap;
 }
 
-#info .container{
-
-    text-align: center;
-    height: 200px;
-}
-
-footer h5{
-
-    margin-left: 20px;
-
-}
