@@ -137,3 +137,67 @@ h2 {
 .card { background: var(--white); padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
 .tag { font-size: 0.75rem; font-weight: bold; color: var(--white); background: var(--primary); padding: 3px 10px; border-radius: 4px; display: inline-block; margin-bottom: 10px; }
 footer { text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.9rem; }
+
+/* --- Mobile Responsiveness --- */
+
+/* This triggers for screens smaller than 768px (Tablets and Phones) */
+@media (max-width: 768px) {
+    
+    /* 1. Adjust Navigation for fingers */
+    nav {
+        flex-direction: column; /* Stacks links vertically */
+        align-items: center;
+        padding: 1rem 5%;
+    }
+
+    /* 2. Shrink Header Text */
+    header {
+        padding: 2rem 5%;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    /* 3. Stack the About Me section */
+    .about-wrapper {
+        flex-direction: column; /* Stacks image on top of text */
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* 4. Make the Profile Image Responsive */
+    .profile-image-area {
+        width: 100%;       /* Takes full width of phone */
+        max-width: 350px;  /* Stops it from getting too huge on small tablets */
+        height: auto;      /* Maintains aspect ratio */
+        aspect-ratio: 1 / 1; /* Keeps it a perfect square */
+    }
+
+    /* 5. Adjust Containers */
+    .container {
+        margin: 1.5rem auto;
+        padding: 0 15px;
+    }
+
+    /* 6. Stack Contact Cards in 1 column */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-image-area {
+        width: 80%;           /* Takes up 80% of the screen width instead of 100% */
+        max-width: 300px;     /* Limits the size so it's not overwhelming on mobile */
+        height: auto;         /* Allows height to adjust */
+        aspect-ratio: 1 / 1;  /* Keeps it a perfect square */
+        margin: 0 auto;       /* Centers the image on the phone screen */
+        border: 2px solid var(--primary);
+    }
+
+    .about-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;   /* Centers your bio text to match the centered image */
+    }
+}
