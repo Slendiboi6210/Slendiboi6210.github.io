@@ -138,6 +138,13 @@ h2 {
 .tag { font-size: 0.75rem; font-weight: bold; color: var(--white); background: var(--primary); padding: 3px 10px; border-radius: 4px; display: inline-block; margin-bottom: 10px; }
 footer { text-align: center; padding: 4rem 0; color: var(--text-muted); font-size: 0.9rem; }
 
+
+
+/* --- highstakes styles --- */
+
+.highstakes-wrapper { display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; }
+
+
 /* --- Mobile Responsiveness --- */
 
 /* This triggers for screens smaller than 768px (Tablets and Phones) */
