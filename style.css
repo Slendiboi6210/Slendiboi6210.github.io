@@ -148,6 +148,13 @@ footer { text-align: center; padding: 4rem 0; color: var(--text-muted); font-siz
 .highstakes-text {  width: 500px; height: 500px; flex-shrink: 0;}
 .highstakes-text p{font-size: 20px; line-height: 40px;}
 
+.general-wrapper { display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; }
+.general-pic-area { width: 500px; height: 500px; background: #ddd; border-radius: 8px; overflow: hidden; border: 2px solid var(--primary); flex-shrink: 0; }
+.general-pic-area img{ width: 100%; height: 100%; object-fit: cover; }
+.general-text {  width: 500px; height: 500px; flex-shrink: 0;}
+.general-text p{font-size: 20px; line-height: 40px;}
+
+
 /* --- Mobile Responsiveness --- */
 
 /* This triggers for screens smaller than 768px (Tablets and Phones) */
